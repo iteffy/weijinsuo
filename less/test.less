@@ -1,0 +1,14 @@
+@charset "UTF-8";
+// less中的注释方法，css中不支持不会显示
+
+// 变量声明：@前缀 是等于的意思，必须分号结尾
+@mainColor: #e92322;
+@className: box;
+
+a:hover {
+  color: @mainColor;
+}
+// 字符串拼接变量用{}包起来
+.@{className} {
+  color: @mainColor;
+}
